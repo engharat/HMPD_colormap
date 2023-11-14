@@ -7,7 +7,7 @@ The HMPD dataset can be downloaded [at this link](https://cnrsc-my.sharepoint.co
  
 To run the experiments using the HSL data follow this experiments:
 
-- install hsluv package
+- install the _hsluv package_
   
 ``` pip install hsluv ```
 
