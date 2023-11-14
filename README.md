@@ -1,4 +1,7 @@
-# HDMP
+The following text is reported from the original HMPD dataset repository: [link](https://github.com/beppe2hd/HMPD)
+At the end of the text is reported the additional steps needed to run on HSL data.
+
+# HMPD
 
 HMPD is a large sized dataset of microplastic/non-microplastic images retrieved by the analysis pipeline in figure below and labeled by and experts. 
 The employed water sample comes from an aliquot of wastewater from a washing test of polyester textiles in a commercial washing machine.
