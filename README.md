@@ -15,4 +15,3 @@ To run the experiments using the HSL data follow this experiments:
   
 ``` python combine.py --type HLS ```
 
-- 
