@@ -1,6 +1,8 @@
 The following text is reported from the original HMPD dataset repository: [link](https://github.com/beppe2hd/HMPD)
-At the end of the text is reported the additional steps needed to run on HSL data.
-
+Here is reported the additional steps needed to run on HSL data.
+- install hsluv package with pip install hsluv
+- run python combine.py --type HLS to generate HLS data
+- 
 # HMPD
 
 HMPD is a large sized dataset of microplastic/non-microplastic images retrieved by the analysis pipeline in figure below and labeled by and experts. 
