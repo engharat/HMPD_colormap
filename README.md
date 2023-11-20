@@ -19,3 +19,29 @@ To run the experiments using the HSL data:
   
 ``` python combine.py --type HLS ```
 
+- modify the yaml config file to use the desired type of data and backbone network. For example, to use HSL and DenseNet model, create the following yaml file:
+``` 
+num_classes: 2
+channel: 'HLS'
+num_epochs: 25
+learning_rate: 0.00001
+train_CNN: True
+batch_size: 32
+shuffle: True
+pin_memory: True
+num_workers: 8
+transform_resize: [100, 100]
+transform_crop: [80, 80]
+transform_normalize_mean: [0.5, 0.5, 0.5]
+transform_normalize_var: [0.5, 0.5, 0.5]
+listofNetwork:
+  'densenet121': 'models.densenet121()'
+```
+
+-run the training:
+``` python banckmark_staticFolds.py --device gpu --name newtest --config ./config/costuomConf.yaml --dataset <basepath>/Microplastiche/images --gt <basepath_folding_files> ``` 
+
+-run the test:
+``` python report.py --name <newtest> ``` 
+-Check the obtained results in the tests/<newtest>/results.json file 
+
